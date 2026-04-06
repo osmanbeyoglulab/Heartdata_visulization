@@ -28,5 +28,13 @@ option = st.selectbox(
     ) 
 
 imgfile = f"./data/{sample}/spatial_tf/{option}_(TF_activity_and_mRNA_expression).png"
-st.image(imgfile)
+# st.image(imgfile)
+import base64
+from pathlib import Path
+img_b64 = base64.b64encode(Path(imgfile).read_bytes()).decode()
+st.markdown(f"""
+    <div style="display: flex; justify-content: center;">
+        <img src="data:image/png;base64,{img_b64}" style="max-width: 100%; width: 800px;">
+    </div>
+""", unsafe_allow_html=True)
 
