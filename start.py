@@ -6,6 +6,7 @@ import os
 # st.cache_data.clear()
 # st.cache_resource.clear()
 
+st.set_page_config(layout="wide") 
 
 # --- PAGE SETUP ----
 
