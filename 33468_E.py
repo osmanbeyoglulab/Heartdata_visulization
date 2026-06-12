@@ -28,7 +28,7 @@ div[class*="stSelectbox"] label {
 st.write(tabs_font_css, unsafe_allow_html=True)
 
 option = st.selectbox(
-    label='tf',
+    label='TF',
     options=tf_names,
     ) 
 
@@ -46,7 +46,7 @@ st.markdown(f"""
 
 st.write("")
 option = st.selectbox(
-    label='cell type',
+    label='Cell Type',
     options=ct_names,
     ) 
 
