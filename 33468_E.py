@@ -65,7 +65,7 @@ import streamlit as st
 import base64
 from pathlib import Path
 
-st.set_page_config(layout="wide") 
+# st.set_page_config(layout="wide") 
 # Override Streamlit's default container width
 st.markdown("""
     <style>
