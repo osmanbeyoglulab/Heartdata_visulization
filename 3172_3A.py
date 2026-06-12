@@ -56,6 +56,6 @@ imgfile = f"./data/{sample}/Lee_TF_Marker_Figs/{option}_Lee's_L_between_TF_Marke
 img_b64 = base64.b64encode(Path(imgfile).read_bytes()).decode()
 st.markdown(f"""
     <div style="display: flex; justify-content: center;">
-        <img src="data:image/png;base64,{img_b64}" style="max-width: 100%; width: 800px;">
+        <img src="data:image/png;base64,{img_b64}" style="max-width: 100%; width: 1000px;">
     </div>
 """, unsafe_allow_html=True)
