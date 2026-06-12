@@ -48,10 +48,10 @@ sample = "33468_E"
 session_id_tf = f"{sample}_tf_names"
 session_id_ct = f"{sample}_ct_names"
 
-if session_id not in st.session_state:
+if session_id_tf not in st.session_state:
     data_path = f"./data/{sample}/spatial_tf"
     st.session_state[session_id_tf] = get_tf_names(data_path)
-
+if session_id_ct not in st.session_state:
     data_path = f"./data/{sample}/Lee_TF_Marker_Figs"
     st.session_state[session_id_ct] = get_celltype_names(data_path)
 
