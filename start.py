@@ -36,12 +36,24 @@ def get_tf_names(directory):
             tf_names.append(filename.split("_(")[0])
     return tf_names
 
+def get_celltype_names(directory):
+    ct_names = []
+    for fname in os.listdir(folder):
+        if fname.endswith("_Lee's_L_between_TF_Marker.png"):
+            xxx = fname.replace("_Lee's_L_between_TF_Marker.png", "")
+            ct_names.append(xxx)
+    return ct_names    
+
 sample = "33468_E"
-session_id = f"{sample}_tf_names"
+session_id_tf = f"{sample}_tf_names"
+session_id_ct = f"{sample}_ct_names"
 
 if session_id not in st.session_state:
     data_path = f"./data/{sample}/spatial_tf"
-    st.session_state[session_id] = get_tf_names(data_path)
+    st.session_state[session_id_tf] = get_tf_names(data_path)
+
+    data_path = f"./data/{sample}/Lee_TF_Marker_Figs"
+    st.session_state[session_id_ct] = get_celltype_names(data_path)
 
     
 # ---- start main ---
