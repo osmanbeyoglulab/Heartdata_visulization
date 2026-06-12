@@ -38,7 +38,7 @@ def get_tf_names(directory):
 
 def get_celltype_names(directory):
     ct_names = []
-    for fname in os.listdir(folder):
+    for fname in os.listdir(directory):
         if fname.endswith("_Lee's_L_between_TF_Marker.png"):
             xxx = fname.replace("_Lee's_L_between_TF_Marker.png", "")
             ct_names.append(xxx)
