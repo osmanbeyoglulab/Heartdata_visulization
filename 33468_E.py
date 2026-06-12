@@ -6,6 +6,7 @@ st.write("")
 
 sample = "33468_E"
 session_id_tf = f"{sample}_tf_names"
+session_id_ct = f"{sample}_ct_names"
 # print(type(session_id_tf), session_id_tf)
 
 tf_names = st.session_state[session_id_tf]
