@@ -36,6 +36,13 @@ def get_tf_names(directory):
             tf_names.append(filename.split("_(")[0])
     return tf_names
 
+def get_marker_names(directory):
+    marker_names = []
+    for filename in os.listdir(directory):
+        if filename.endswith(".png") and "_(" in filename:
+            marker_names.append(filename.split("_(")[0])
+    return marker_names
+        
 def get_celltype_names(directory):
     ct_names = []
     for fname in os.listdir(directory):
@@ -46,6 +53,12 @@ def get_celltype_names(directory):
 
 sample = "33468_E"
 session_id_tf = f"{sample}_tf_names"
+session_id_marker = f"{sample}_marker_names"
+session_id_ct = f"{sample}_ct_names"
+
+sample = "3172-3A"
+session_id_tf = f"{sample}_tf_names"
+session_id_marker = f"{sample}_marker_names"
 session_id_ct = f"{sample}_ct_names"
 
 if session_id_tf not in st.session_state:
