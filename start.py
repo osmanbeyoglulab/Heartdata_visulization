@@ -98,6 +98,7 @@ sample2_page = st.Page(
     title = "3172_3A",
     icon = emoji
 )
+
 TF_marker_compare_page = st.Page(
     page = "TF_marker_Lees_L_comparison.py",
     title = "TF_marker_Lees_L_comparison",
@@ -111,7 +112,7 @@ TF_marker_compare_page = st.Page(
 
 pg = st.navigation(
     {
-       "": [sample1_page, sample2_page, TF_marker_Lees_L_comparison_page],
+       "": [sample1_page, sample2_page, TF_marker_compare_page],
     }
 )
 
