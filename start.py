@@ -69,9 +69,9 @@ for sample in ["33468_E", "3172-3A"]:
             data_path = f"./data/{sample}/spatial_tf"
             st.session_state[session_id_tf] = get_tf_names(data_path)
                 
-        if session_id_tf not in st.session_state:
+        if session_id_marker not in st.session_state:
             data_path = f"./data/{sample}/Marker_expr_figs"
-            st.session_state[session_id_marker] = get_tf_names(data_path)    
+            st.session_state[session_id_marker] = get_marker_names(data_path)    
                 
         if session_id_ct not in st.session_state:
             data_path = f"./data/{sample}/Lee_TF_Marker_Figs"
