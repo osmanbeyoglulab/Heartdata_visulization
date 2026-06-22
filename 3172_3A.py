@@ -4,7 +4,7 @@ st.markdown("<h2 style='text-align: center; color: black;'>TF spatial</h1>", uns
 st.write("")
 
 
-sample = "3172_3A"
+sample = "3172-3A"
 session_id_tf = f"{sample}_tf_names"
 session_id_ct = f"{sample}_ct_names"
 # print(type(session_id_tf), session_id_tf)
