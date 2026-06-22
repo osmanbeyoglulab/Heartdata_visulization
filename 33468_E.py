@@ -56,7 +56,7 @@ c1.image(imgfile)
 #     </div>
 # """, unsafe_allow_html=True)
 
-imgfile = f"./data/{sample}/spatial_tf/{option}__mRNA_expression.png"
+imgfile = f"./data/{sample}/spatial_tf/{option}_mRNA_expression.png"
 c2.image(imgfile)
 
 st.write("")
