@@ -20,7 +20,8 @@ st.write(tabs_font_css, unsafe_allow_html=True)
 tm_option = st.selectbox(label='TF/Marker', options=tm_names)
 
 tm_img = f"./data/TF_marker_Lees_L_comparison_both_samples/{tm_option}.png"
+_,c,_ = st.columns([1,4,1])
 if os.path.exists(tm_img):
-    st.image(tm_img)
+    c.image(tm_img)
 else:
     st.warning(f"Missing: {os.path.basename(tm_img)}")
