@@ -39,9 +39,10 @@ def get_tf_names(directory):
 def get_marker_names(directory):
     marker_names = []
     for filename in os.listdir(directory):
-        if filename.endswith(".png") and "_(" in filename:
-            marker_names.append(filename.split("_(")[0])
-    return marker_names
+        if fname.endswith("_mRNA_expression.png"):
+            xxx = fname.replace("_mRNA_expression.png", "")
+            marker_names.append(xxx)
+    return marker_names    
         
 def get_celltype_names(directory):
     ct_names = []
