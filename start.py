@@ -55,8 +55,8 @@ def get_celltype_names(directory):
 def get_tfmarker_names(directory):
     tm_names = []
     for fname in os.listdir(directory):
-        if fname.endswith("_mRNA_expression.png"):
-            xxx = fname.replace("_mRNA_expression.png", "")
+        if fname.endswith(".png"):
+            xxx = fname.replace(".png", "")
             tm_names.append(xxx)
     return tm_names 
         
