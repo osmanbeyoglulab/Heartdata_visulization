@@ -38,7 +38,7 @@ def get_tf_names(directory):
 
 def get_marker_names(directory):
     marker_names = []
-    for filename in os.listdir(directory):
+    for fname in os.listdir(directory):
         if fname.endswith("_mRNA_expression.png"):
             xxx = fname.replace("_mRNA_expression.png", "")
             marker_names.append(xxx)
