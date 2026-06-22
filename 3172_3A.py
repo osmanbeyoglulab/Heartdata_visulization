@@ -22,7 +22,7 @@ div[class*="stSelectbox"] label { color: purple; }
 """
 st.write(tabs_font_css, unsafe_allow_html=True)
 
-c1,_, c2,_ = st.columns([2, 0.1, 0.8,0.1])
+c1,_, c2,_ = st.columns([2, 0.2, 0.6,0.2])
 
 tf_option = c1.selectbox(label='TF', options=tf_names)
 marker_option = c2.selectbox(label='mRNA Marker', options=marker_names)
