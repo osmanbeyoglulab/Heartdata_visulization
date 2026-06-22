@@ -80,7 +80,7 @@ for sample in ["33468_E", "3172-3A"]:
 session_id_tm = "tm_names"
 if session_id_tm not in st.session_state:
     data_path = f"./data/TF_marker_Lees_L_comparison_both_samples"
-    st.session_state[session_id_tm] = get_tm_names(data_path)   
+    st.session_state[session_id_tm] = get_tfmarker_names(data_path)   
         
 # ---- start main ---
 
