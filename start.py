@@ -3,8 +3,8 @@ from style import page_style, footer
 import pandas as pd
 from style import define_layout
 import os
-# st.cache_data.clear()
-# st.cache_resource.clear()
+st.cache_data.clear()
+st.cache_resource.clear()
 
 
 # --- PAGE SETUP ----
