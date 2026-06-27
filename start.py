@@ -78,8 +78,8 @@ for sample in ["33468_E", "3172-3A"]:
             data_path = f"./data/{sample}/Lee_TF_Marker_Figs"
             cts = get_celltype_names(data_path)
             st.session_state[session_id_ct] = cts
-            st.write(sample)
-            st.write(cts)
+            # st.write(sample)
+            # st.write(cts)
 
 session_id_tm = "tm_names"
 if session_id_tm not in st.session_state:
